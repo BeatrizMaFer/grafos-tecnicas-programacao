@@ -46,9 +46,9 @@ public class Main
     
     
     // Retornar adjacencias
-    
     System.out.println(meuGrafo.retornarAdj(v1));
-    
+      
+    // Retornar se são vizinhos
     saoVizinhosPrint(v4, v5, meuGrafo);
     
     // Imprimir lista de adjacências do grafo 
