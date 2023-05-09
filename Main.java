@@ -37,7 +37,7 @@ public class Main
     meuGrafo.adicionarAdj(v3, adj3);
     
     
-    List<Vertice> adj4 = Arrays.asList(v2, v5, v4);
+    List<Vertice> adj4 = Arrays.asList(v2, v5, v3);
     meuGrafo.adicionarAdj(v4, adj4);
     
     
@@ -51,9 +51,11 @@ public class Main
     
     saoVizinhosPrint(v4, v5, meuGrafo);
     
-    // Imprimir lista de adjacÊncias do grafo 
+    // Imprimir lista de adjacências do grafo 
     meuGrafo.listaAdjGrafo();
     
+    // Imprimir matriz de adjacências do grafo
+    meuGrafo.matrizAdj();
     
   }
 }
