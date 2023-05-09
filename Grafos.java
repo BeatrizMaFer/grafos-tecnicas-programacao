@@ -29,6 +29,26 @@ public class Grafos
         }
         
     }
+    
+    public void matrizAdj(){
+        System.out.println("A matriz de adjacência do grafo é: " );
+        
+        for (Vertice item : vertices){
+            
+            for (Vertice item2 : vertices){
+                
+                if (item.adj.contains(item2))
+                    System.out.print( 1 + " ");
+            
+                else
+                    System.out.print( 0 + " ");
+                        
+            }
+                
+            System.out.println("\n");
+        }
+        
+    }
         
     
     
@@ -43,22 +63,24 @@ public class Grafos
         List<Vertice> adjs = v.retornarAdj();
         
         String result = "A lista de adjacentes de " + v.num + " é: ";
-        for (Vertice item : adjs){
-            result += item.num + " ";
-        }
+            for (Vertice item : adjs){
+                result += item.num + " ";
+            }
         if (adjs != null)
             return result;
-        else return null;    
+        else 
+            return null;    
         
     }
+    
     public int saoVizinhos(Vertice v1, Vertice v2) {
-    for (Vertice item : v1.adj) {
-        if (v2.equals(item)) {
+        for (Vertice item : v1.adj) {
+            if (v2.equals(item)) {
             return 1;
+            }   
         }
+        return 0;
     }
-    return 0;
-}
 
     
     
